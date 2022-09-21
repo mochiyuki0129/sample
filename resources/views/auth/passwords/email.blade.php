@@ -18,16 +18,14 @@
                                 @endforeach
                             </div>
                         @endif
-                        <form action="{{ route('password.email') }}" method="post">
-                            @csrf
-                            <div class="form-group">
-                                <label for="email">メールアドレス</label>
-                                <input type="text" class="form-control" id="email" name="email" />
-                            </div>
-                            <div class="text-right">
-                                <button type="submit" class="btn btn-primary">再発行リンクを送る</button>
-                            </div>
-                        </form>
+                        @csrf
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="text" class="form-control" id="email" name="email" />
+                        </div>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-primary">再発行リンクを送る</button>
+                        </div>
                     </div>
                 </nav>
             </div>
